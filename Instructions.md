@@ -144,10 +144,10 @@ Here, we transform the data once again to shift the mean expression of each gene
 ```{r}
 all.genes <- rownames(pbmc)
 pbmc <- ScaleData(pbmc, features = all.genes)
-
-# Results are stored in:
-pbmc@assays$RNA@layers$scale.data
 ```
+
+Results are stored in: `pbmc@assays$RNA@layers$scale.data` 
+
 
 > How can you confirm that the average expression for each gene is now 0?  
 
